@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/static/tela_cadastro.css">
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="mensagens">
+                {% for mensagem in messages %}
+                    <li>{{ mensagem }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <header class="cabecalho">
+        <img src="/static/img/Logo ALV.png" alt="logo">
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <aside class="img_maior">
+            <img src="/static/img/banner_cadastro.jpeg" alt="imagem_maior">
+        </aside>
+        <section class="formulario">
+            <form action="/cadastrar_usuario" method="post">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <div class="informacoes">
+                    <div>
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" maxlength="14" placeholder="000.000.000-00">
+                    </div>
+                    <div>
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco">
+                    </div>
+                    <div>
+                        <label for="data_nascimento">Data de Nascimento</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="tel" maxlength="15" placeholder="(12) 34567-8910">
+                    </div>
+                    <div>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha">
+                    </div>
+                    <div>
+                        <label for="confirmar_senha">Confirmar Senha</label>
+                        <input type="password" name="confirmar_senha" id="confirmar_senha">
+                    </div>
+                    <div class="acordo">
+                        <input type="checkbox" name="acordo" id="acordo">
+                        <p>Li e estou de acordo com as políticas da empresa e políticas de privacidade.</p>
+                    </div>  
+                </div>                
+                <button type="submit">Cadastrar-se</button>                              
+            </form>
+        </section>
+    </main>
+</body>
+</html>

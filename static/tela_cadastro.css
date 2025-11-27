@@ -1,0 +1,129 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding:0;
+    transition: all 0.4s ease;
+
+}
+:root{
+    --branco:#c7c7c7; /* cor do fundo */
+    --azul-1:#02283F; /* cor do cabeçalho */
+    --azul-2:#01588E; /* cor do botão */
+    --preto:#000; /* preto padrão */
+}
+body{
+    background: var(--branco);
+
+}
+.cabecalho{
+    background: var(--azul-1);
+    color: var(--branco);
+    width: 100%;
+    display: flex; /* essa linha deixo o logo do site e a aba "Home" lado a lado*/
+    align-items:center;
+
+}
+.cabecalho nav{
+    border-radius: 6px;
+    background-color: white;
+    border: none;    
+}
+.cabecalho img{
+    width: 70px;
+    padding: 10px;
+}
+.cabecalho a{
+    text-decoration:none;
+    color: #023f65;;
+    padding: 10px;
+}
+.cabecalho nav:hover{
+    background-color: rgba(255, 255, 255, 0.20);
+}
+.conteudo{
+    width: 60%;
+    margin:50px auto;
+    gap: 50px;
+    display: flex;
+}
+
+.conteudo img{
+    border-radius:10px;
+    box-shadow:var(--preto) 0 0 10px;
+    width: 300px;
+}
+.formulario form{
+    font-weight: bold;
+    display: flex;
+    flex-direction:column;
+}
+.formulario form input[name=nome],
+.formulario form input[name=email]{
+    border:solid 2px var(--azul-2);
+    border-radius:5px;
+    width: 98%;
+    margin:10px 0;
+    padding:5px 0;
+}
+.formulario form .informacoes div{
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+}
+.formulario form .informacoes{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+
+}
+.formulario form input[name=endereco],
+.formulario form input[name=cpf],
+.formulario form input[name=data_nascimento],
+.formulario form input[name=telefone],
+.formulario form input[name=senha],
+.formulario form input[name=confirmar_senha]{
+    border:solid 2px var(--azul-2);
+    border-radius:5px;
+    width: 96%;
+    margin:10px 0;
+    padding:5px 0;
+}
+.formulario form .informacoes .acordo{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction:row;
+    font-weight: normal;
+}
+
+.formulario button{
+    width: 250px;
+    height: 50px;
+    border-radius: 6px;
+    align-items: center;
+    background-color: #023f65;
+    color: white;
+    font-weight: bold;
+    margin: 15px auto 0 auto;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

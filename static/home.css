@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #0c4c75;
+}
+
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #023f65; 
+    padding: 15px 40px;
+    color: white;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.barra-pesquisa{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    position: relative;
+}
+
+.barra-pesquisa img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    filter: brightness(0) invert(1);
+}
+
+.barra-pesquisa input{
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.icones {
+    display: flex;
+    gap: 5px;
+}
+
+.icone-item {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    
+}
+
+.icone-item button {
+    padding: 10px 20px;
+    background-color: white ;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.icone-item img{
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.cadastro{
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.icone-item button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #023f65;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.icone-item button:hover {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #00588F;
+    padding: 12px;
+}
+
+.menu a{
+    color: #023f65;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+
+.banner {
+    width: 100%;
+    height: 350px;               
+    background-image: url("/static/img/banner.png");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 0;
+    gap: 30px;
+}
+
+.card{
+    width: 260px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: #003b63; 
+}
+
+.card img{
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.card h4{
+    color: rgb(0, 100, 180)
+}
+
+.mensal{
+    font-size: 12px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgba(0, 59, 99, 1);
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background: rgba(0, 59, 99, 0.8);
+}

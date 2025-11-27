@@ -1,2 +1,0 @@
-FLASK_APP=aluguel_de_veiculos
-FLASK_ENV=development
